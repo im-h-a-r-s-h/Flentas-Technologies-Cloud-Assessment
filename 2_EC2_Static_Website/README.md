@@ -70,17 +70,10 @@ Screenshots to Capture
 ----------------------
 
 1.  **EC2 Instance Details**  
-    ![EC2 Instance Details](./ss/task2/ec2-details.png)
-2.  **Security Group Configuration**  
-    ![Security Group](./ss/task2/security-group.png)
-3.  **IAM Role Attached**  
-    ![IAM Role](./ss/task2/iam-role.png)
-4.  **Website in Browser**  
-    ![Website UI](./ss/task2/website.png)
-5.  **CloudWatch Metrics**  
-    ![CloudWatch Metrics](./ss/task2/cloudwatch.png)
-6.  **System Logs**  
-    ![Nginx Logs](./ss/task2/logs.png)
+    ![EC2 Instance Details](./ss/IMG-20251204-WA0010.jpg)
+2.  **IAM Role Attached**  
+    ![IAM Role](./ss/task2/IMG-2025120-WA0007.jpg)
+
 
 Cleanup
 -------
