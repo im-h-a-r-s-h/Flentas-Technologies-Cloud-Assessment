@@ -1,4 +1,4 @@
-###Task 4 - Billing & Free Tier Cost Monitoring
+Task 4 - Billing & Free Tier Cost Monitoring
 ============================================
 
 Importance of Cost Monitoring
@@ -127,15 +127,15 @@ terraform apply \\
 
 **IMPORTANT:** After applying, open your email and confirm SNS subscription.
 
-Screenshots to Capture
-----------------------
+Screenshots
+------------
+ 
+![VPC Screenshot](../ss/IMG-20251204-WA0012.jpg)
 
-1.  CloudWatch Billing Alarm
-2.  SNS Topic & Subscription
-3.  AWS Budgets - Monthly Budget
-4.  AWS Budgets - Free Tier Budget
-5.  Billing Dashboard
-6.  Estimated Charges (Bills Page)
+![VPC Screenshot](../ss/IMG-20251204-WA0013.jpg)
+
+![VPC Screenshot](../ss/IMG-20251204-WA0015.jpg)
+
 
 Monitoring Best Practices
 -------------------------
