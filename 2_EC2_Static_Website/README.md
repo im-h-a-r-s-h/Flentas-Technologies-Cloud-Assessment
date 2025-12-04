@@ -1,0 +1,83 @@
+
+# Task 2 - EC2 Static Website Hosting (Resume)
+
+## Approach & Implementation
+
+I deployed a production-ready, hardened static website hosting solution on AWS:
+
+**Architecture Overview:**
+1. **Compute**: t2.micro EC2 instance in public subnet with auto-assigned public IP
+2. **Web Server**: Nginx for lightweight, high-performance static content delivery
+3. **Content**: Professional HTML resume with embedded styling and animations
+4. **Security**: Multi-layered hardening including IAM roles, security groups, encrypted EBS, firewall rules, and security headers
+5. **Monitoring**: CloudWatch agent for system metrics and logs collection
+
+## Security Hardening Measures Implemented
+
+1. **Network Security**:
+   - Restrictive Security Group: Only HTTP (80), HTTPS (443), and SSH (22) allowed
+   - Public IP assignment for direct internet access
+   - Egress rule allows outbound connectivity for updates
+
+2. **Operating System Hardening**:
+   - Enabled automatic security updates via `unattended-upgrades`
+   - Ubuntu UFW firewall enabled with explicit allow rules
+   - Disabled unnecessary services
+
+3. **Instance Configuration**:
+   - Encrypted EBS root volume (AES-256)
+   - IAM role attached for secure AWS API access
+   - CloudWatch monitoring enabled for instance metrics
+   - SSM Session Manager support for secure shell access
+
+4. **Web Server Hardening**:
+   - Security headers configured (X-Content-Type-Options, X-Frame-Options, CSP)
+   - Nginx runs as dedicated user (www-data)
+   - Proper file permissions (755 for web root)
+
+5. **Application Security**:
+   - Professional resume with no sensitive information exposure
+   - Health check endpoint for monitoring
+   - No default Nginx information disclosure
+
+## Deployment Instructions
+
+**Prerequisites**: Task 1 must be completed to obtain VPC and subnet IDs
+
+```bash
+cd 2_EC2_Static_Website
+terraform init
+terraform plan \
+   -var "prefix=Harsh_Gupta_" \
+   -var "vpc_id=vpc-xxxxx" \
+   -var "public_subnet_id=subnet-xxxxx"
+terraform apply \
+   -var "prefix=Harsh_Gupta_" \
+   -var "vpc_id=vpc-xxxxx" \
+   -var "public_subnet_id=subnet-xxxxx"
+```
+
+## Screenshots to Capture
+
+1. **EC2 Instance Details** - Show instance ID, public IP, instance type (t2.micro), VPC/subnet
+2. **Security Group Configuration** - Show all inbound rules (80, 443, 22) with descriptions
+3. **IAM Role Attached** - Display the role and its attached policies
+4. **Website in Browser** - Screenshot of http://<public-ip>/ showing resume with styling
+5. **CloudWatch Metrics** - Show CPU, network, and disk metrics
+6. **System Logs** - Show Nginx access logs and application startup
+
+## Cleanup
+
+```bash
+terraform destroy -var "prefix=Harsh_Gupta_" -var "vpc_id=vpc-xxxxx" -var "public_subnet_id=subnet-xxxxx"
+```
+
+## Key Hardening Features
+
+- ✅ Encrypted storage at rest
+- ✅ Automatic security updates
+- ✅ Firewall enabled with minimal rules
+- ✅ Security headers to prevent common attacks
+- ✅ IAM-based access control
+- ✅ CloudWatch monitoring integration
+- ✅ Professional resume content
