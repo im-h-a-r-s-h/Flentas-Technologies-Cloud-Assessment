@@ -30,7 +30,6 @@ Reasoning:
 ---
 
 ## 📸 Required Screenshots  
-(Place your screenshots inside `/ss` folder and link them below)
 
 ### 1. VPC Details  
 ![VPC Screenshot](../ss/IMG-20251204-WA0011.jpg)
