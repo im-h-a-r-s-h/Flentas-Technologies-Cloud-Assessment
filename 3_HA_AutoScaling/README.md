@@ -75,12 +75,16 @@ terraform apply \\
   -var "public\_subnet\_ids=\[\\"subnet-public1\\", \\"subnet-public2\\"\]" \\
   -var "private\_subnet\_ids=\[\\"subnet-private1\\", \\"subnet-private2\\"\]"
 
-Screenshots to Capture
-----------------------
+Screenshots 
+
 
 ![VPC Screenshot](../ss/IMG-20251204-WA0012.jpg)
 
 ![Subnets Screenshot](../ss/IMG-20251204-WA0008.jpg)
+
+![VPC Screenshot](../ss/IMG-20251204-WA0013.jpg)
+
+![VPC Screenshot](../ss/IMG-20251204-WA0015.jpg)
 
 Scaling Test Procedure
 ----------------------
