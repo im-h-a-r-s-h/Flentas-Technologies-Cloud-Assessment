@@ -33,19 +33,10 @@ Reasoning:
 (Place your screenshots inside `/ss` folder and link them below)
 
 ### 1. VPC Details  
-![VPC Screenshot](../ss/vpc.png)
+![VPC Screenshot](../ss/IMG-20251204-WA0011.jpg)
 
 ### 2. Subnets (2 Public + 2 Private)  
-![Subnets Screenshot](../ss/subnets.png)
-
-### 3. Route Tables (Public & Private)  
-![Route Tables Screenshot](../ss/route_tables.png)
-
-### 4. Internet Gateway (IGW)  
-![IGW Screenshot](../ss/igw.png)
-
-### 5. NAT Gateway  
-![NAT Gateway Screenshot](../ss/nat_gateway.png)
+![Subnets Screenshot](../ss/IMG-20251204-WA0008.jpg)
 
 ---
 
